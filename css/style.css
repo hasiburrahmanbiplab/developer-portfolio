@@ -150,6 +150,7 @@ nav h3 .r-design{
     margin: 0 auto;
     border: 1px solid blue;
   }
+  /* about part start */
   .about{
     margin: 150px 0;
   }
@@ -185,3 +186,89 @@ nav h3 .r-design{
     text-transform: capitalize;
     padding-top: 10px;
   }
+  /* about part end */
+  /* skills part start */
+  /* skills part End */
+  .skills-part{
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .skills-items{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-top: 35px;
+  }
+  .skills-text{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .skills-text p{
+    padding: 15px 0;
+    width: 100%;
+  }
+  .skills-item{
+    padding: 20px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.185);
+  }
+  .skills-item .skills-items-title{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--header-color);
+    letter-spacing: 0%;
+    line-height: auto;
+    text-transform: capitalize;
+    padding: 15px 0;
+  }
+  /* resume part start */
+  .resume{
+    margin: 150px 0;
+  }
+  .resume-container{
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .resume-container h2{
+    text-align: center;
+  }
+  .resume-educatioin-experience{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 60px;
+    margin-top: 120px;
+    margin-bottom: 60px;
+    text-align: left;
+  }
+  .education-info .education-title{
+    font-size : 15px;
+  }
+  .education{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .education h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(71, 71, 71, 1);
+  }
+  .education-info .education-title{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(71, 71, 71, 1);
+    line-height: auto;
+    letter-spacing: 0%;
+  }
+  .education-info .education-subtitle{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: auto;
+    letter-spacing: 0%;
+    padding: 10px 0;
+  }
+
+  /* resume part End */
