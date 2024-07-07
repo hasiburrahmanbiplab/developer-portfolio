@@ -17,6 +17,21 @@
       --button-color:#FD6E0A;
       --text-color:#757575;
   }
+  .section-title{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--header-color);
+    line-height: auto;
+    letter-spacing: 0%;
+  }
+  .section-description{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+    letter-spacing: 0%;
+    line-height: 25px;
+
+  }
   /* header part start */
   #header{
     background-image: url('../images/developer.png'), url('../images/header_bg.png');
@@ -66,7 +81,7 @@ nav h3 .r-design{
     color: #ffffff;
     line-height: auto;
     padding: 18px 34px;
-    border: none;
+    border: 1px solid var(--button-color);
     border-radius: 5px;
     text-transform: capitalize;
   }
@@ -97,7 +112,7 @@ nav h3 .r-design{
     letter-spacing: 0%;
     margin: 25px 0;
   }
-  .banner-text .banner-discription{
+  .banner-text .banner-description{
     font-size: 14px;
     font-weight: 400;
     color: var(--text-color);
@@ -105,9 +120,12 @@ nav h3 .r-design{
     letter-spacing: 0%;
     margin-bottom: 15px;
   }
+   .banner-text .banner-first-btn{
+    display: inline-flex;
+    gap: 5px;                                                   
+   }
   .banner-text .banner-second-btn{
     background-color: transparent;
-    border: 1px solid var(--button-color);
     color: var(--button-color);
     margin-left: 20px;
     transition: all linear 0.3s;
@@ -119,10 +137,51 @@ nav h3 .r-design{
     transition: all linear 0.3s;
   }
   .banner-image{
-    width: 585px;
+    width: 585px; 
   }
   .banner-image img{
     width: 100%;
     height: inherit;
   }
   /* header part end */
+  /* main part start */
+  main{
+    width: 1140px;
+    margin: 0 auto;
+    border: 1px solid blue;
+  }
+  .about{
+    margin: 150px 0;
+  }
+  .about-part{
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 25px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about-part .about-text p{
+    padding: 20px 0;
+  }
+  .about-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-items .about-item .items-title{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+    letter-spacing: 0%;
+    text-transform: capitalize;
+  }
+  .about-items .about-item .items-description{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--header-color);
+    text-transform: capitalize;
+    padding-top: 10px;
+  }
