@@ -15,10 +15,13 @@
   :root{
       --header-color:#181818;
       --button-color:#FD6E0A;
+      --text-color:#757575;
   }
   /* header part start */
   #header{
-    background-color: lightgray;
+    background-image: url('../images/developer.png'), url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
   }
   nav{
     display: flex;
@@ -68,18 +71,58 @@ nav h3 .r-design{
     text-transform: capitalize;
   }
   /* banner par start */
-  .banner{}
+  .banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 35px 0 200px ;
+  }
+  .banner-text{
+    max-width: 560px;
+  }
   .banner-text .banner-gretting{
+    width: 100%;
     font-size: 25px;
     font-weight: 600;
     color: #474747;
     line-height: 100%;
     letter-spacing: 0%;
   }
+  .banner-text .banner-title{
+    width: 100%;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--header-color);
+    line-height:100% ;
+    letter-spacing: 0%;
+    margin: 25px 0;
+  }
+  .banner-text .banner-discription{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 25px;
+    letter-spacing: 0%;
+    margin-bottom: 15px;
+  }
   .banner-text .banner-second-btn{
     background-color: transparent;
     border: 1px solid var(--button-color);
     color: var(--button-color);
     margin-left: 20px;
+    transition: all linear 0.3s;
+  }
+  .banner-text .banner-second-btn:hover{
+    background-color: var(--button-color);
+    color: #ffffff;
+    border: 1px solid transparent;
+    transition: all linear 0.3s;
+  }
+  .banner-image{
+    width: 585px;
+  }
+  .banner-image img{
+    width: 100%;
+    height: inherit;
   }
   /* header part end */
